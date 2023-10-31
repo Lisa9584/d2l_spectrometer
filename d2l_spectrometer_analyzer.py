@@ -23,7 +23,7 @@ ax.grid()
 
 #calibration
 chanel_cal = [55, 139, 1065]
-energy_cal = [32, 81, 662]
+energy_cal = [32.0614, 80.9971, 661.657 ]
 
 coeff = np.polyfit(chanel_cal, energy_cal, deg = 1)
 energies = chanel*coeff[0] + coeff[1]
